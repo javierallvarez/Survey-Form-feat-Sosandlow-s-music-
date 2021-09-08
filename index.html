@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center"> <span>Survey</span>Form</h1>
+            <p id="description" class="description text-center">- Looking for your feedback -</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Your name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Write your name" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Your Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Write your Email"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Your age<span class="clue"> (optional)</span> </label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control"
+                    placeholder="Write your age" />
+            </div>
+            <div class="player">
+                <iframe width="83%" height="400" scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1280633305&color=%2340e0d0&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                <div
+                    style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                </div>
+            </div>
+            <div class="form-group">
+                <p>What is your favorite track?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select a track</option>
+                    <option value="one">Calima</option>
+                    <option value="two">Calima (Alex Medina Remix)</option>
+                    <option value="three">Calima (Cipy Remix)</option>
+                    <option value="four">Bahia</option>
+                    <option value="five">Todas molan un cojón que flipas y les daría 2€</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend Sosandlow's music to a friend?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                        checked />Definitely</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What do you like the most of their sound?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+                <label><input name="prefer" value="amazing-basslines" type="checkbox" class="input-checkbox" />Amazing
+                    basslines</label>
+                <label>
+                <input name="prefer" value="outstanding-synths" type="checkbox" class="input-checkbox" />Outstanding
+                    synths</label>
+                <label><input name="prefer" value="crazy-percs" type="checkbox" class="input-checkbox" />Crazy
+                    percs</label>
+                <label><input name="prefer" value="strong-kickdrum" type="checkbox" class="input-checkbox" />Strong
+                    kickdrum</label>
+                <label><input name="prefer" value="flying-pads" type="checkbox" class="input-checkbox" />Flying
+                    pads</label>
+                <label><input name="prefer" value="listen-demo-tracks" type="checkbox" class="input-checkbox"/>They
+                    should listen to my demo tracks</label>
+            </div> 
+                <div class="form-group final">
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Enter your comment here..."></textarea>
+                <!-- </div> -->
+                <!-- <div class="form-group button"> -->
+                    <button type="submit" id="submit" class="submit-button">
+                      Submit
+                    </button>
+                </div>
+        </form>
+    </div>
+
+</body>
+</html>

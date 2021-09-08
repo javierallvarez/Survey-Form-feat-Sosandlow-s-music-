@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,800;1,100;1,400;1,800&display=swap');
+
+:root {
+    --gradient: linear-gradient(120deg, rgb(242, 242, 242), rgb(232, 231, 231), rgb(255, 255, 255));
+    --darkwhite: rgb(242, 242, 242);
+    --piano: #E5BFA0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    width: 100%;
+    min-height: 210vh;
+    margin: 0;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    background-image: var(--gradient);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    width: 60%;
+    height: 20vh;
+    line-height: 0.4;
+    margin-top: 5rem;
+}
+
+.description{
+    font-size: 1.4rem;
+    color: turquoise;
+}
+
+#survey-form{
+    padding-top: 4rem;
+    width: 60vw;
+    background: var(--gradient);
+    border-radius: 1rem ;
+    filter: opacity(80%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.6;
+    box-shadow: 0px 5px 8px 0px rgba(80, 82, 81, 0.527);
+    
+}
+
+.player{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+::placeholder{
+    background: linear-gradient(120deg, turquoise, rgb(35, 207, 190))
+}
+
+.form-group{ 
+    background: var(--gradient);
+    width: 80%;
+    padding: 1rem 1rem 2rem 2rem;
+    margin: 1rem;
+    border: --darkwhite solid 1px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 10px 5px 0px rgba(161, 161, 161, 0.31);
+}
+
+span{
+    font-weight: 100;
+}
+
+.input-textarea{
+    height: 10vh;
+}
+
+.final{
+    margin-bottom: 5rem;
+    border-radius: 0 0 15px 15px;
+}
+
+.submit-button{
+    background: turquoise;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: solid 1px rgb(116, 115, 115);
+    margin-top: 2rem;
+}
+
+.submit-button:hover{
+    color: rgb(228, 228, 228);
+}
+
+@media (max-width: 45rem){
+    body{
+        font-size: 1.4rem;
+    }
+
+    .description{
+        font-size: 1.2rem;
+    }
+
+    #survey-form{
+        max-width: 40rem;
+    }
+}
